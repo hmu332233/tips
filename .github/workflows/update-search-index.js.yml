@@ -5,6 +5,8 @@ name: Update Search Index
 
 on:
   workflow_dispatch:
+  issues:
+    types: [opened, edited, deleted, closed]
 
 jobs:
   post:
